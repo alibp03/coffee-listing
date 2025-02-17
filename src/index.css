@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.6rem;
+}
+
+.app {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.bg-image {
+  height: 30%;
+}
+
+.bg-color {
+  background-color: #111315;
+  height: 100%;
+}
+
+.collection {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1b1d1f;
+  width: 100rem;
+  height: 90%;
+  padding: 2rem 11rem;
+  border-radius: 1rem;
+}
+
+.collection-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.collection-heading {
+  font-size: 2.4rem;
+  color: #fef7ee;
+  text-align: center;
+}
+
+.collection-description {
+  font-size: 1.4rem;
+  color: #6f757c;
+  text-align: center;
+  padding: 0 17rem;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.filter-btn {
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #fef7ee;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #4d5562;
+  border-radius: 0.6rem;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1rem;
+}
+
+.coffee-image {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.coffee-details {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.coffe-name {
+  color: #fef7ee;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.coffe-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111315;
+  background-color: #bee3cc;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.5rem;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.star {
+  width: 2rem;
+  margin-top: -0.5rem;
+}
+
+.coffee-rating {
+  color: #fef7ee;
+  font-size: 1.2rem;
+}
+
+.coffee-vote {
+  color: #6f757c;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.sold-out {
+  color: #ed735d;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+.popular {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111315;
+  background-color: #f6c768;
+  padding: 0.3rem 1rem;
+  border-radius: 2rem;
+}
+
+.loader {
+  text-align: center;
+  font-size: 3rem;
+  color: #fef7ee;
+}
+
+.error-message {
+  text-align: center;
+  font-size: 3rem;
+  color: #ed735d;
+}
